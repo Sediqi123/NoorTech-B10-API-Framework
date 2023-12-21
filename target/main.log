@@ -1,0 +1,259 @@
+21:00:59.130 karate.env value: scrum 
+21:00:59.269 [print] ./src/test/java/com/noorteck/qa/data/emp-api/EmpTestData.json
+21:00:59.705 [print] {
+  "firstName": "Kent",
+  "lastName": "Bednar",
+  "email": "Kent@test.com",
+  "phoneNumber": "238-446-8984",
+  "hireDate": "01/01/1970",
+  "jobId": "AD_VP",
+  "salary": 24094.69,
+  "comissionPct": 0.15,
+  "managerId": 140,
+  "departmentId": 10
+}
+
+21:01:00.330 request:
+1 > POST https://hr-scrum.noortecktraining.com/employee/create
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 205
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: hr-scrum.noortecktraining.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_341)
+{"firstName":"Kent","lastName":"Bednar","email":"Kent@test.com","phoneNumber":"238-446-8984","hireDate":"01/01/1970","jobId":"AD_VP","salary":24094.69,"comissionPct":0.15,"managerId":140,"departmentId":10}
+
+21:01:00.528 response time in milliseconds: 197.01
+1 < 404
+1 < Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+1 < Access-Control-Allow-Origin: *
+1 < Aceess-Control-Allow-Headers: Content-Type, Authorization
+1 < Connection: keep-alive
+1 < Content-Length: 34
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Content-Type: application/json; charset=utf-8
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < Date: Fri, 22 Sep 2023 01:00:59 GMT
+1 < ETag: W/"22-e1r9SH9xjNdd/RuX/t/fSdnw1wk"
+1 < Origin-Agent-Cluster: ?1
+1 < Referrer-Policy: no-referrer
+1 < Server: openresty
+1 < Strict-Transport-Security: [max-age=15552000; includeSubDomains, max-age=63072000; preload]
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-DNS-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-XSS-Protection: 0
+{"message":"Department not found"}
+
+21:01:00.529 [print] {
+  "message": "Department not found"
+}
+
+21:01:00.552 [print] ./src/test/java/com/noorteck/qa/data/emp-api/EmpTestData.json
+21:01:00.568 feature call failed: classpath:com/noorteck/qa/helpers/GenerateTestData.feature
+arg: {"fileName":"./src/test/java/com/noorteck/qa/data/emp-api/EmpTestData.json","region":"sit","index":"0","empId":null}
+GenerateTestData.feature:13 - evaluation (js) failed: new javaClassObject().updateEmpID(fileName, region,index, empId), java.lang.NumberFormatException: null
+stack trace: java.lang.Integer.parseInt(Integer.java:542)
+21:01:00.581 karate.env value: scrum 
+21:01:00.615 request:
+1 > GET https://hr-scrum.noortecktraining.com/employee/one?id=236
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: hr-scrum.noortecktraining.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_341)
+
+21:01:00.653 response time in milliseconds: 36.04
+1 < 404
+1 < Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+1 < Access-Control-Allow-Origin: *
+1 < Aceess-Control-Allow-Headers: Content-Type, Authorization
+1 < Connection: keep-alive
+1 < Content-Length: 32
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Content-Type: application/json; charset=utf-8
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < Date: Fri, 22 Sep 2023 01:01:00 GMT
+1 < ETag: W/"20-HHUHWyX9RZhESkyYIuLDu5Z0xwA"
+1 < Origin-Agent-Cluster: ?1
+1 < Referrer-Policy: no-referrer
+1 < Server: openresty
+1 < Strict-Transport-Security: [max-age=15552000; includeSubDomains, max-age=63072000; preload]
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-DNS-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-XSS-Protection: 0
+{"message":"Employee not found"}
+
+21:01:00.654 [print] {
+  "message": "Employee not found"
+}
+
+21:01:00.659 karate.env value: scrum 
+21:01:00.693 [print] ./src/test/java/com/noorteck/qa/data/emp-api/EmpTestData.json
+21:01:00.787 [print] {
+  "employeeId": 236,
+  "firstName": "Lucile",
+  "lastName": "Crooks",
+  "email": "Lucile@test.com",
+  "phoneNumber": "827-617-8313",
+  "hireDate": "01/01/1970",
+  "jobId": "AD_VP",
+  "salary": 197491.57,
+  "comissionPct": 0.65,
+  "managerId": 140,
+  "departmentId": 10
+}
+
+21:01:00.790 request:
+1 > PUT https://hr-scrum.noortecktraining.com/employee/update
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 227
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: hr-scrum.noortecktraining.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_341)
+{"employeeId":236,"firstName":"Lucile","lastName":"Crooks","email":"Lucile@test.com","phoneNumber":"827-617-8313","hireDate":"01/01/1970","jobId":"AD_VP","salary":197491.57,"comissionPct":0.65,"managerId":140,"departmentId":10}
+
+21:01:00.828 response time in milliseconds: 36.62
+1 < 404
+1 < Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+1 < Access-Control-Allow-Origin: *
+1 < Aceess-Control-Allow-Headers: Content-Type, Authorization
+1 < Connection: keep-alive
+1 < Content-Length: 32
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Content-Type: application/json; charset=utf-8
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < Date: Fri, 22 Sep 2023 01:01:00 GMT
+1 < ETag: W/"20-HHUHWyX9RZhESkyYIuLDu5Z0xwA"
+1 < Origin-Agent-Cluster: ?1
+1 < Referrer-Policy: no-referrer
+1 < Server: openresty
+1 < Strict-Transport-Security: [max-age=15552000; includeSubDomains, max-age=63072000; preload]
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-DNS-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-XSS-Protection: 0
+{"message":"Employee not found"}
+
+21:01:00.829 [print] {
+  "message": "Employee not found"
+}
+
+21:01:00.839 karate.env value: scrum 
+21:01:00.871 [print] ./src/test/java/com/noorteck/qa/data/emp-api/EmpTestData.json
+21:01:00.906 [print] {
+  "employeeId": 236,
+  "firstName": "Brian",
+  "lastName": "D'Amore",
+  "phoneNumber": "(436) 696-2226"
+}
+
+21:01:00.908 request:
+1 > PATCH https://hr-scrum.noortecktraining.com/employee/update
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 90
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: hr-scrum.noortecktraining.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_341)
+{"employeeId":236,"firstName":"Brian","lastName":"D'Amore","phoneNumber":"(436) 696-2226"}
+
+21:01:00.936 response time in milliseconds: 27.09
+1 < 404
+1 < Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+1 < Access-Control-Allow-Origin: *
+1 < Aceess-Control-Allow-Headers: Content-Type, Authorization
+1 < Connection: keep-alive
+1 < Content-Length: 32
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Content-Type: application/json; charset=utf-8
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < Date: Fri, 22 Sep 2023 01:01:00 GMT
+1 < ETag: W/"20-HHUHWyX9RZhESkyYIuLDu5Z0xwA"
+1 < Origin-Agent-Cluster: ?1
+1 < Referrer-Policy: no-referrer
+1 < Server: openresty
+1 < Strict-Transport-Security: [max-age=15552000; includeSubDomains, max-age=63072000; preload]
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-DNS-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-XSS-Protection: 0
+{"message":"Employee not found"}
+
+21:01:00.937 [print] {
+  "message": "Employee not found"
+}
+
+21:01:00.945 karate.env value: scrum 
+21:01:00.962 request:
+1 > DELETE https://hr-scrum.noortecktraining.com/employee/delete/236
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: hr-scrum.noortecktraining.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_341)
+
+21:01:01.021 response time in milliseconds: 57.81
+1 < 404
+1 < Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+1 < Access-Control-Allow-Origin: *
+1 < Aceess-Control-Allow-Headers: Content-Type, Authorization
+1 < Connection: keep-alive
+1 < Content-Length: 32
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Content-Type: application/json; charset=utf-8
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < Date: Fri, 22 Sep 2023 01:01:00 GMT
+1 < ETag: W/"20-HHUHWyX9RZhESkyYIuLDu5Z0xwA"
+1 < Origin-Agent-Cluster: ?1
+1 < Referrer-Policy: no-referrer
+1 < Server: openresty
+1 < Strict-Transport-Security: [max-age=15552000; includeSubDomains, max-age=63072000; preload]
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-DNS-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-XSS-Protection: 0
+{"message":"Employee not found"}
+
+21:01:01.021 [print] {
+  "message": "Employee not found"
+}
+
+d"
+}
+
+
+}
+

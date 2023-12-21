@@ -1,0 +1,32 @@
+{
+	"scrum": [
+		{
+			"firstName": "Claris",
+			"lastName": "Stehr",
+			"jobId": "IT_PROG",
+			"hireDate": "01/01/2000",
+			"comissionPct": 0.07,
+			"phoneNumber": "952.837.2116",
+			"departmentId": 10,
+			"employeeId": 2335,
+			"managerId": 114,
+			"salary": 53403.05,
+			"email": "Claris@test.com"
+		}
+	],
+	"sit": [
+		{
+			"firstName": "Brian",
+			"lastName": "D'Amore",
+			"jobId": "AD_VP",
+			"hireDate": "01/01/1970",
+			"comissionPct": 0.07,
+			"phoneNumber": "(436) 696-2226",
+			"departmentId": 10,
+			"employeeId": 236,
+			"managerId": 140,
+			"salary": 178155.49,
+			"email": "Brian@test.com"
+		}
+	]
+}
